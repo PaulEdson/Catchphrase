@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: scroll;
+    color: white;
+}
+
+#drawingboard{
+    border: 2px solid black;
+    margin: 5px;
+}
+
+#sendingboard{
+    border: 2px solid black;
+    margin: 5px;
+}
+
+#toolbar {
+    color: black;
+}
+
+#messages {
+    color: black;
+}

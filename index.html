@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <!--Header tag containing name of the tab and stylesheet-->
+  <head>
+    <meta name="Catchphrase" content="width=device-width,initial-scale=1.0">
+    <title>Catchphrase</title>
+    <link rel = "stylesheet" href=style.css>
+  </head>
+
+  <!--body tag-->
+  <body>
+
+    <!--this section contains the line editing suite-->
+    <section class = "container">
+      <div id = "toolbar">
+        <h1>Catchphrase</h1>
+        <label for = "stroke">Stroke</label>
+        <input id = "stroke" name = "stroke" type = "color">
+        <label for = "linewidth">Line Width</label>
+        <input id = "linewidth" name = "linewidth" type = "number" value = "5">
+        <button id = "clear">Clear</button>
+        <button id = "sendImg">Send</button>
+      </div>
+      <div class = "drawingboard">
+        <canvas id = "drawingboard">  </canvas>
+        <canvas id = "sendingboard"></canvas>
+      </div>
+    </section>
+
+    <!--unordered list for messages display ...work in progress-->
+    <ul id="messages"></ul>
+
+    <!--Creating form and input ids for chat functionality-->
+    <form id="form" action="">
+      <input id="input" autocomplete="off" /><button>Send</button>
+    </form>
+
+    <!--connecting to socket.io for networking framework-->
+    <script src="/socket.io/socket.io.js"></script>
+    <!--client side script connected here-->
+    <script src = "canvas.js"></script>
+  </body>
+</html>
